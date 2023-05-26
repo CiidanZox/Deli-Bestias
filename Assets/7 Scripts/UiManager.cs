@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class UiManager : MonoBehaviour
 {
-    public RectTransform panelController, options;
+    public RectTransform panelController, options, minijuegos;
 
     public void ChoosePanel(float posX)
     {
@@ -28,4 +28,15 @@ public class UiManager : MonoBehaviour
     {
         options.DOAnchorPos(new Vector2(0, 820), 0.40f);
     }
+
+    public void Minijuegos()
+    {
+        minijuegos.DOAnchorPos(new Vector2(0, 0), 0.1f);
+    }
+
+    public void CloseMinijuegos()
+    {
+        minijuegos.DOAnchorPos(new Vector2(0, 1460),0.1f);
+    }
+    
 }

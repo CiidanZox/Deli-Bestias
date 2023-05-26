@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f7e80b6b194b3ae4d89b6434f378f727
+guid: 16cf78281701fcb49b25a9eca88e46f6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,10 +48,10 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 1024
-  spriteBorder: {x: 253, y: 2496, z: 1345, w: 406}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Minijuegos_0
+      name: barra comida 1_0
       rect:
         serializedVersion: 2
-        x: 236
-        y: 2492
-        width: 853
-        height: 845
+        x: 0
+        y: 0
+        width: 1932
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e6e960a799af7247aa174420978dc5c
-      internalID: 128937545
+      spriteID: ba0207d4103c6dd4fb31e29bb0b6a353
+      internalID: 1635102814
       vertices: []
       indices: 
       edges: []
@@ -140,15 +140,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    spriteID: bbb1aec516c99a54c95797f3902ea327
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Minijuegos_0: 128937545
+      barra comida 1_0: 1635102814
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
