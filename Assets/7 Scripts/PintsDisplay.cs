@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.Events;
 using Unity.VisualScripting;
 
 public class PintsDisplay : MonoBehaviour
@@ -18,8 +19,9 @@ public class PintsDisplay : MonoBehaviour
         UpdatePointsUI();
     }
 
-    private void UpdatePointsUI()
+    public void UpdatePointsUI()
     {
         pointsText.text = gameManager.Points.ToString();
     }
+
 }

@@ -65,6 +65,7 @@ public class GameManager : MonoBehaviour
     {
         pointsMinigame = 0;
     }
+    
 
     public int PointsMinijuegos { get; set; }
 }
