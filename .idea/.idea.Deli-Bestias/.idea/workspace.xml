@@ -4,8 +4,11 @@
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/PintsDisplay.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/PintsDisplay.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/Test2Barras.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/Test2Barras.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Candy Beans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Candy Beans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +97,7 @@
       <workItem from="1684796657039" duration="13632000" />
       <workItem from="1685045084462" duration="2333000" />
       <workItem from="1685345140604" duration="3555000" />
+      <workItem from="1685403202582" duration="4863000" />
     </task>
     <servers />
   </component>

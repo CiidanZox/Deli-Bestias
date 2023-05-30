@@ -30,7 +30,7 @@ public class BuyButton : MonoBehaviour
             
             Debug.Log("!Compra Exitosa!");
             
-            Vector3 frutillaPosition = new Vector3(-2.338f, 2.1f, 0f);
+            Vector3 frutillaPosition = new Vector3(-2.26f, -2.78f, 0f);
 
             Instantiate(frutillaPrefab, frutillaPosition, Quaternion.identity);
 

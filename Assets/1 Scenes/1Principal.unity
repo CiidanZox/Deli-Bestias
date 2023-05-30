@@ -1424,8 +1424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -681.86115, y: 5627}
-  m_SizeDelta: {x: 68.825, y: 50}
+  m_AnchoredPosition: {x: -608.2565, y: 5627}
+  m_SizeDelta: {x: 85.018, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328146406
 MonoBehaviour:
@@ -2937,6 +2937,8 @@ GameObject:
   m_Component:
   - component: {fileID: 671221401}
   - component: {fileID: 671221400}
+  - component: {fileID: 671221402}
+  - component: {fileID: 671221403}
   m_Layer: 0
   m_Name: MariposaMantequilla1_0
   m_TagString: Untagged
@@ -3011,6 +3013,47 @@ Transform:
   m_Father: {fileID: 1984832044}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &671221402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671221399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400827cdc5147174eacd17549fa05797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  food: 0.2
+  foodBar: {fileID: 1600208467}
+  initialPosition: {fileID: 7808577045634429744, guid: 41763826f8d3d0e4f950252c7d312491, type: 3}
+--- !u!61 &671221403
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671221399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.22525048, y: -1.0980968}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 15.26, y: 19.69}
+    newSize: {x: 15.26, y: 19.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.628729, y: 17.493805}
+  m_EdgeRadius: 0
 --- !u!1 &710725673
 GameObject:
   m_ObjectHideFlags: 0
@@ -5225,7 +5268,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
