@@ -15,6 +15,11 @@ public class EsceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("2SpaceBeast");
     }
+
+    public void DeliJump()
+    {
+        SceneManager.LoadScene("3DeliFall");
+    }
     
     public void Principal()
     {

@@ -4,11 +4,38 @@
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/Test2Barras.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/Test2Barras.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Candy Beans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/Candy Beans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/TestGacha.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/TestGacha.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CangrejoCuaso1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CangrejoCuaso1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CerezasGato.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CerezasGato.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/Manqueque1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/Manqueque1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PaltaPinguino1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PaltaPinguino1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PlatanoTiburon1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PlatanoTiburon1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/RatonQueso.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/RatonQueso.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/VacaFrutilla1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/VacaFrutilla1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/NewBehaviourScript.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/NewBehaviourScript.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/GuiaObs.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/GuiaObs.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/GuiasObstaculos.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/GuiasObstaculos.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/FlappyManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/FlappyManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/ManagerEscenas.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/ManagerEscenas.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/MecanicaVolar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/MecanicaVolar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/MovimientoObstaculos.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/MovimientoObstaculos.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/PointController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/PointController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/SpawnObstaculos.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/Flappy Bird/Scripts/SpawnObstaculos.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +125,7 @@
       <workItem from="1685045084462" duration="2333000" />
       <workItem from="1685345140604" duration="3555000" />
       <workItem from="1685403202582" duration="4863000" />
+      <workItem from="1685573866164" duration="17300000" />
     </task>
     <servers />
   </component>

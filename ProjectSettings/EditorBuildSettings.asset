@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1 Scenes/2SpaceBeast.unity
     guid: 8cf7e6aeda983504d95c54f5da935f57
+  - enabled: 1
+    path: Assets/1 Scenes/3DeliFall.unity
+    guid: ed8c8a62e094edf4bbe74ad74560b927
+  - enabled: 1
+    path: Assets/1 Scenes/4DeliRun.unity
+    guid: f11dde5cf4912594c9a5da8e0efb1dc6
   m_configObjects: {}

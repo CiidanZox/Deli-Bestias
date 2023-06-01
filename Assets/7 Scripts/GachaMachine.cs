@@ -1,112 +1,78 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Events;
 
 public class GachaMachine : MonoBehaviour
 {
+    public int gachaPrice = 100;
+    public Transform resultPosition;
+    public List<GameObject> spawnDeliBestias;
+    public UnityEvent onSpin;
 
-    public GameObject[] characters;
-    Vector3 scaleBestias;
+    private GameManager gameManager;
+    private bool isSpinning = false;
+    private List<GameObject> delibestiasDisponibles;
 
-    void Start()
+    private void Start()
     {
-        foreach (GameObject character in characters) ;
+        gameManager = GameManager.Instance;
+        delibestiasDisponibles = new List<GameObject>(spawnDeliBestias);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Spin()
     {
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    Vector3 mousePosition = Input.mousePosition;
-        //    mousePosition.z = Camera.main.transform.position.z;
-        //    Vector3 worldPosition = Camera.main.ScreenToWorldPoint(mousePosition);
-
-        //    if (Vector2.Distance(transform.position, worldPosition) < GetComponent<CircleCollider2D>().radius)
-        //    {
-
-        //    }
-        //}
-
-    }
-
-    GameObject character;
-    int[] gachaCounter = new int[5];
-    public void ActivateGacha()
-    {
-        foreach (GameObject obj in characters)
+        if (!isSpinning && gameManager.Points >= gachaPrice && delibestiasDisponibles.Count > 0)
         {
-            obj.SetActive(false);
+            isSpinning = true;
+            gameManager.Points -= gachaPrice;
+
+            onSpin.Invoke();
+
+            Debug.Log("Gacha spin successful!");
+            
+            int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
+            GameObject resultObject = delibestiasDisponibles[randomIndex];
+
+            Vector3 spawnPosition = transform.position;
+            spawnPosition.y = -10f;
+
+            Vector3 deliPosition = new Vector3(0.1f, 0.1f, 0.1f);
+
+            Transform spawnedObject = Instantiate(resultObject, deliPosition, Quaternion.identity).transform;
+
+            spawnedObject.DOScale(deliPosition * 1.5f, 1f).SetEase(Ease.OutBounce);
+
+            spawnedObject.DOMove(resultPosition.position, 1f).SetEase(Ease.OutQuint).OnComplete(() =>
+            {
+                    Destroy(spawnedObject.gameObject, 1f);
+                    isSpinning = false;
+            });
+
+            delibestiasDisponibles.RemoveAt(randomIndex);
+                
+            PintsDisplay pintsDisplay = FindObjectOfType<PintsDisplay>();
+            if (pintsDisplay != null)
+            {
+                pintsDisplay.UpdatePointsUI();
+            }
         }
-
-        float maxChance = 1; // Valor máximo del dado
-        float randIndex = Random.Range(0, maxChance); // Tira un dado de 0 a maxChance
-
-        // No tocar
-        float commonChance = 2.3f; // 43,47
-        float uncommonChance = 1.35f; // 74.07
-        float rareChance = 1.09f; // 93,74
-        // No tocar
-
-        //Común (43,4%)
-        if (randIndex <= maxChance / commonChance) // Common
+        else if (isSpinning)
         {
-            // Solo tocar los valores de Random.Range (Son las ids de las criaturas)
-            character = characters[Random.Range(0, 2)];
-
-            gachaCounter[0]++;
+            Debug.Log("El gacha se esta realizando!");
         }
-
-        //Poco común (30,6%)
-        else if (randIndex > maxChance / commonChance && randIndex <= maxChance / uncommonChance) // Uncommon - Common
+        
+        else if (gameManager.Points < gachaPrice)
         {
-            character = characters[Random.Range(2, 4)];
-
-            gachaCounter[1]++;
+            Debug.Log("No hay suficientes monedas para comprar!");
         }
-
-        // Raro (17,63%)
-        else if (randIndex > maxChance / uncommonChance && randIndex <= maxChance / rareChance) // Rare - Uncommon
+        
+        else if (delibestiasDisponibles.Count == 0)
         {
-            character = characters[Random.Range(4, 6)];
-
-            gachaCounter[2]++;
+            Debug.Log("No hay mas delibestias disponibles en el gacha!");
         }
-
-        // Mítico (8,3%)
-        else if (randIndex > maxChance / rareChance) // 100 - Rare
-        {
-            character = characters[Random.Range(6, 8)];
-
-            gachaCounter[3]++;
-        }
-
-        // Las probabilidades anotadas son aproximaciones
-
-        scaleBestias = new Vector3(2.5f, 2.5f, 2.5f);
-        gachaCounter[4]++;
-        character.SetActive(true);
-        character.transform.localScale = character.transform.localScale * 1.5f;
-        character.transform.position = transform.position;
-        character.transform.DOMoveY(transform.position.y + 2f, 0.5f).SetEase(Ease.OutBack);
-        character.transform.DOScale(scaleBestias, 0.5f).SetEase(Ease.OutBack);
-
-        ////Chances Debug
-
-        //print("CommonChance: " + maxChance / commonChance);
-        //print("Uncommon Chance: " + (maxChance / uncommonChance - maxChance / commonChance));
-        //print("Rare Chance: " + (maxChance / rareChance - maxChance / uncommonChance));
-        //print("Mythical Chance: " + maxChance / rareChance);
-        //print("Dice Value: " + randIndex);
-
-        //////Samples Debug
-
-        //print("Common Counter: " + gachaCounter[0]);
-        //print("Uncommon Counter: " + gachaCounter[1]);
-        //print("Rare Counter: " + gachaCounter[2]);
-        //print("Mythical Counter: " + gachaCounter[3]);
-        //print("Total Counter: " + gachaCounter[4]);
     }
 }
 
