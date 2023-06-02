@@ -26,5 +26,11 @@ public class EsceneManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("1Principal");
     }
+    public void ResetAll()
+    {
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene("1Principal");
+    }
+
 
 }
