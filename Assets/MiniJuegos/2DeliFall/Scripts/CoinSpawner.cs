@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class CoinSpawner : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class CoinSpawner : MonoBehaviour
 
     private void SpawnCircle()
     {
-        float spawnX = alternateSpawn ? spawnX1 : spawnX2;
+        float spawnX = Random.Range(spawnX1, spawnX2);
 
         GameObject circle = Instantiate(circlePrefab, transform.position + new Vector3(spawnX, spawnHeight, 0f), Quaternion.identity);
         Rigidbody2D circleRb = circle.GetComponent<Rigidbody2D>();

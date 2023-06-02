@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73fed747f257fb14888d748a3ae08f14
+guid: 5f84e60c03902f04c9a75ce1b3e9b3d0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fondo FB_0
+      name: MONEDAS Y BLOQUEADO_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1440
-        height: 2400
+        x: 143
+        y: 1849
+        width: 1373
+        height: 776
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b6867e14d2bef148a8cd3f07e86f8d0
-      internalID: 378232886
+      spriteID: 836645e984f46bb4a934caa3663f1dab
+      internalID: 1651912996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MONEDAS Y BLOQUEADO_1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 966
+        width: 1355
+        height: 779
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f6ade8b4043c346ad2caf6b2f4fb76
+      internalID: 898629242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MONEDAS Y BLOQUEADO_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 2193
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3447655c7fd9f4abd9ef96f31228ca
+      internalID: -160888735
       vertices: []
       indices: 
       edges: []
@@ -140,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 47872999e87c05e45869d5a45cce0ee1
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fondo FB_0: 378232886
+      MONEDAS Y BLOQUEADO_1: 898629242
+      MONEDAS Y BLOQUEADO_2: -160888735
+      MONEDAS Y BLOQUEADO_0: 1651912996
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
