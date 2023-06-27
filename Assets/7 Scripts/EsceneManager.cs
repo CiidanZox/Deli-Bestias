@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,7 @@ public class EsceneManager : MonoBehaviour
         SceneManager.LoadScene("2SpaceBeast");
     }
 
-    public void DeliJump()
+    public void DeliFall()
     {
         SceneManager.LoadScene("3DeliFall");
     }
@@ -30,6 +31,11 @@ public class EsceneManager : MonoBehaviour
     {
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene("1Principal");
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 
 

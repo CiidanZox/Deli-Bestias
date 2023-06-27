@@ -708,6 +708,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
     Android: USC_UNITY_PIPELINE_LEGACY;USC_EXCLUDE_SHARE
+    Standalone: USC_UNITY_PIPELINE_LEGACY
     WebGL: USC_EXCLUDE_SHARE
     iPhone: USC_EXCLUDE_SHARE
   additionalCompilerArguments: {}

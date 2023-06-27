@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../prueba delibestiassssss/Assets/Scripts/CambioPanel.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -80,6 +83,9 @@
       <workItem from="1685063667378" duration="386000" />
       <workItem from="1685411536513" duration="2847000" />
       <workItem from="1685683686742" duration="1630000" />
+      <workItem from="1687810046923" duration="2286000" />
+      <workItem from="1687816818330" duration="807000" />
+      <workItem from="1687877435085" duration="4920000" />
     </task>
     <servers />
   </component>
