@@ -36,7 +36,7 @@ public class UiManager : MonoBehaviour
 
     public void CloseMinijuegos()
     {
-        minijuegos.DOAnchorPos(new Vector2(0, 1460),0.1f);
+        minijuegos.DOAnchorPos(new Vector2(0, 6420),0.1f);
     }
 
     public void FoodEnergy()
