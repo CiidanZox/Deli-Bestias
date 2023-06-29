@@ -33,10 +33,4 @@ public class EsceneManager : MonoBehaviour
         SceneManager.LoadScene("1Principal");
     }
 
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
-    }
-
-
 }
