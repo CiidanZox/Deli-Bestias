@@ -26,7 +26,7 @@ public class UiManager : MonoBehaviour
 
     public void CloseOptions()
     {
-        options.DOAnchorPos(new Vector2(0, 820), 0.40f);
+        options.DOAnchorPos(new Vector2(0, 6420), 0.40f);
     }
 
     public void Minijuegos()
@@ -41,7 +41,7 @@ public class UiManager : MonoBehaviour
 
     public void FoodEnergy()
     {
-        foodEnergy.DOAnchorPos(new Vector2(0, -37), 0.1f);
+        foodEnergy.DOAnchorPos(new Vector2(97, -373), 0.1f);
     }
 
     public void CloseFoodEnergy()
