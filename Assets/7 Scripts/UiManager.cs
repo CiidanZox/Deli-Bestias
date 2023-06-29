@@ -51,12 +51,12 @@ public class UiManager : MonoBehaviour
 
     public void ShopPoints()
     {
-        shopPoints.DOAnchorPos(new Vector2(0, 15), 2.8f);
+        shopPoints.DOAnchorPos(new Vector2(0, 15), 0.1f);
     }
 
     public void CloseShopPoints()
     {
-        shopPoints.DOAnchorPos(new Vector2(-550, 0), 2.8f);
+        shopPoints.DOAnchorPos(new Vector2(-3305, 0), 0.1f);
     }
 
     public void Gacha()
