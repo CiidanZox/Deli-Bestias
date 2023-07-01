@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d46c059440bbb804795126e72fe6dab3
+guid: 7318c5e0d16b5e74bbff6db1a64eac84
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cantidad gacha_0
+      name: Mesa de trabajo 5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1066
-        height: 534
+        x: 110
+        y: 548
+        width: 1200
+        height: 2502
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2678ab6565a338f419c39cd6c686b022
-      internalID: 1227920293
+      spriteID: c9160ed0f9f12fe45b2c45f0b040407b
+      internalID: 99906417
       vertices: []
       indices: 
       edges: []
@@ -140,7 +140,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bc123383737bb7045ab82b8cddc67108
+    spriteID: ae097cd4e189d0a4fab00ada3ce5c7b5
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cantidad gacha_0: 1227920293
+      Mesa de trabajo 5_0: 99906417
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

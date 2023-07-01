@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6779be9d60ad8874195ac4717fc8f604, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 865804716}
+  officialCanvas: {fileID: 865804716}
   iniciandoJuego: {fileID: 1503580762}
   perdiendoJuego: {fileID: 923487305}
 --- !u!1 &840022388
