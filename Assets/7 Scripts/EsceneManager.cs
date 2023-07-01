@@ -21,7 +21,12 @@ public class EsceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("3DeliFall");
     }
-    
+
+    public void DeliFood()
+    {
+        SceneManager.LoadScene("4DeliFood");
+    }
+
     public void Principal()
     {
         Time.timeScale = 1;

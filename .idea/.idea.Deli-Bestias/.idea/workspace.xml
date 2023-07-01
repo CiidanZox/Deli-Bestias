@@ -5,9 +5,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/Test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/Test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliRun.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliRun.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliRun.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliRun/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Nueva carpeta.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +114,8 @@
       <workItem from="1685664223991" duration="12629000" />
       <workItem from="1685686225908" duration="727000" />
       <workItem from="1687994725538" duration="904000" />
+      <workItem from="1688169297612" duration="6350000" />
+      <workItem from="1688177297617" duration="2623000" />
     </task>
     <servers />
   </component>
