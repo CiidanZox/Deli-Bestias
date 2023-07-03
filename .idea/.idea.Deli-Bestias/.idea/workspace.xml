@@ -5,14 +5,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliRun.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliRun.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliRun.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliRun/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Nueva carpeta.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnOb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnOb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +117,8 @@
       <workItem from="1687994725538" duration="904000" />
       <workItem from="1688169297612" duration="6350000" />
       <workItem from="1688177297617" duration="2623000" />
+      <workItem from="1688347392120" duration="661000" />
+      <workItem from="1688348834786" duration="15653000" />
     </task>
     <servers />
   </component>
