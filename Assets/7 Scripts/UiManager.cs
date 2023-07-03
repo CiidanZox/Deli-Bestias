@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class UiManager : MonoBehaviour
 {
-    public RectTransform panelController, options, minijuegos, foodEnergy, shopPoints, gacha;
+    public RectTransform panelController, options, minijuegos, foodEnergy, shopPoints, gacha ,galeria;
 
     public void ChoosePanel(float posX)
     {
@@ -41,31 +41,41 @@ public class UiManager : MonoBehaviour
 
     public void FoodEnergy()
     {
-        foodEnergy.DOAnchorPos(new Vector2(97, -373), 0.1f);
+        foodEnergy.DOAnchorPos(new Vector2(0, -3433), 0.1f);
     }
 
     public void CloseFoodEnergy()
     {
-        foodEnergy.DOAnchorPos(new Vector2(0, 1870),0.1f);
+        foodEnergy.DOAnchorPos(new Vector2(0, 6420),0.1f);
     }
 
     public void ShopPoints()
     {
-        shopPoints.DOAnchorPos(new Vector2(0, 0), 1f);
+        shopPoints.DOAnchorPos(new Vector2(0, 0), .5f);
     }
 
     public void CloseShopPoints()
     {
-        shopPoints.DOAnchorPos(new Vector2(-3305, 0), 1f);
+        shopPoints.DOAnchorPos(new Vector2(-3305, 0), .5f);
     }
 
     public void Gacha()
     {
-        gacha.DOAnchorPos(new Vector2(0, 320), 4f);
+        gacha.DOAnchorPos(new Vector2(0, 0), 0.3f);
     }
 
     public void CloseGacha()
     {
-        gacha.DOAnchorPos(new Vector2(550, 320), 0f);
+        gacha.DOAnchorPos(new Vector2(550, 13330), 0f);
+    }
+
+    public void Galeria()
+    {
+        galeria.DOAnchorPos(new Vector2(0, 0),0.5f);
+    }
+
+    public void CloseGaleria()
+    {
+        galeria.DOAnchorPos(new Vector2(0, 13330), 0.5f);
     }
 }
