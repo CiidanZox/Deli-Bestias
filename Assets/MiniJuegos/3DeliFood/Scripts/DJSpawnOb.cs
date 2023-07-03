@@ -8,6 +8,7 @@ public class DJSpawnOb : MonoBehaviour
     public float spawnInterval = 12f;
     public float spawnIntervalReduction = 1f;
     public float timeToReduceInterval = 48f;
+    public float rotationSpeed = 100f;
 
     private float nextSpawnTime;
     private float elapsedTime;
@@ -40,6 +41,8 @@ public class DJSpawnOb : MonoBehaviour
         float spawnX = Random.Range(-2.28f, 2.26f);
         Vector3 spawnPosition = new Vector3(spawnX, transform.position.y, 0f);
 
-        Instantiate(obstPrefab, spawnPosition, Quaternion.identity);
+        GameObject spawnedObject = Instantiate(obstPrefab, spawnPosition, Quaternion.identity);
+        Rigidbody2D rb = spawnedObject.GetComponent<Rigidbody2D>();
+        rb.angularVelocity = rotationSpeed;
     }
 }

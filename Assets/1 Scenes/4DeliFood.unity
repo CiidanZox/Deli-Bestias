@@ -1313,10 +1313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afe22888c6bbc004d9ea4fa1ae55d57b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstPrefab: {fileID: 5945378522817417880, guid: 401561f2ad8bf3f4c9c273315cb2bf4d, type: 3}
+  obstPrefab: {fileID: 3253864395943373917, guid: 6d1740efb29b16f499414097e8ab7bc2, type: 3}
   spawnInterval: 12
   spawnIntervalReduction: 1
   timeToReduceInterval: 48
+  rotationSpeed: 100
 --- !u!4 &1032140297
 Transform:
   m_ObjectHideFlags: 0
@@ -1342,6 +1343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051263751}
   - component: {fileID: 1051263754}
+  - component: {fileID: 1051263758}
   - component: {fileID: 1051263753}
   - component: {fileID: 1051263752}
   - component: {fileID: 1051263755}
@@ -1507,6 +1509,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lostPanel: {fileID: 903041613}
+--- !u!114 &1051263758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051263750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec5a312bd4b302438dcc713e99e3839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1090503159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,6 +1568,7 @@ MonoBehaviour:
   pinaPrefab: {fileID: 4662651270686470102, guid: 7392a090792ad3e4bb1f7cd9a7b5cb9b, type: 3}
   zanahoriaPrefab: {fileID: 3636491929517239215, guid: c77d446ddd1909540b256fea4402b725, type: 3}
   spawnInterval: 2
+  rotationSpeed: 100
 --- !u!1 &1156441302
 GameObject:
   m_ObjectHideFlags: 0
