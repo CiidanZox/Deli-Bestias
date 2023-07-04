@@ -8,6 +8,7 @@ public class BuyZanahora : MonoBehaviour
 {
     public int precio = 50;
     public GameObject zanahoriaPrefab;
+    public GameObject fireprefab;
     public UnityEvent onPurchase;
     public TMPro.TextMeshProUGUI inventoryText;
     public Inventory inventory;

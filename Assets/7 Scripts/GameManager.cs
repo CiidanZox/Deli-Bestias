@@ -4,6 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
+
+
+
+[System.Serializable]
+public partial class GameData
+{
+    public int points;
+    public int pointsMinigame;
+    public bool firstPlay;
+}
 
 public class GameManager : MonoBehaviour
 {
@@ -13,16 +25,21 @@ public class GameManager : MonoBehaviour
     private bool firstPlay = true;
     private int _pointsMinigame = 0;
 
+    private string saveFilePath;
+
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(transform.root.gameObject);
-            
+
+            saveFilePath = Application.persistentDataPath + "/saveData.dat";
+            LoadGameData();
+
             if (!SceneManager.GetSceneByName("0Null").isLoaded)
             {
-                SceneManager.LoadScene("0Null" , LoadSceneMode.Additive);
+                SceneManager.LoadScene("0Null", LoadSceneMode.Additive);
             }
         }
         else
@@ -66,6 +83,49 @@ public class GameManager : MonoBehaviour
         pointsMinigame = 0;
     }
     
+    public void SaveGameData()
+    {
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream file = File.Create(saveFilePath);
+
+        GameData data = new GameData();
+        data.points = points;
+        data.pointsMinigame = pointsMinigame;
+        data.firstPlay = firstPlay;
+
+        bf.Serialize(file, data);
+        file.Close();
+    }
+    
+    public void LoadGameData()
+    {
+        if (File.Exists(saveFilePath))
+        {
+            BinaryFormatter bf = new BinaryFormatter();
+            FileStream file = File.Open(saveFilePath, FileMode.Open);
+
+            GameData data = (GameData)bf.Deserialize(file);
+            file.Close();
+
+            points = data.points;
+            pointsMinigame = data.pointsMinigame;
+            firstPlay = data.firstPlay;
+        }
+        else
+        {
+            points = 0;
+            pointsMinigame = 0;
+            firstPlay = true;
+        }
+    }
+    
+    private void OnApplicationQuit()
+    {
+        SaveGameData();
+    }
+
 
     public int PointsMinijuegos { get; set; }
 }
+
+

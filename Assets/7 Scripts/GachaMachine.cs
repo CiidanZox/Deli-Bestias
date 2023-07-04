@@ -4,12 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using UnityEngine.Events;
+using System.IO;
+using Newtonsoft.Json;
+
+[System.Serializable]
+public class ObjectConnection
+{
+    public GameObject delibestia;
+    public GameObject objetoConectar;
+    public GameObject buttonBlocked;
+}
 
 public class GachaMachine : MonoBehaviour
 {
     public int gachaPrice = 100;
     public Transform resultPosition;
     public List<GameObject> spawnDeliBestias;
+    public List<ObjectConnection> objectConnections;
+    public List<GameObject> buttonBlocked;
     public UnityEvent onSpin;
 
     private GameManager gameManager;
@@ -32,7 +44,7 @@ public class GachaMachine : MonoBehaviour
             onSpin.Invoke();
 
             Debug.Log("Gacha spin successful!");
-            
+
             int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
             GameObject resultObject = delibestiasDisponibles[randomIndex];
 
@@ -47,32 +59,42 @@ public class GachaMachine : MonoBehaviour
 
             spawnedObject.DOMove(resultPosition.position, 1f).SetEase(Ease.OutQuint).OnComplete(() =>
             {
-                    Destroy(spawnedObject.gameObject, 1f);
-                    isSpinning = false;
+                Destroy(spawnedObject.gameObject, 1f);
+                isSpinning = false;
             });
 
             delibestiasDisponibles.RemoveAt(randomIndex);
-                
+
+            ObjectConnection connection = objectConnections.Find(con => con.delibestia == resultObject);
+            if (connection != null)
+            {
+                GameObject objetoConectar = connection.objetoConectar;
+                GameObject buttonBlock = connection.buttonBlocked;
+
+                objetoConectar.SetActive(false);
+                buttonBlock.SetActive(false);
+
+                objetoConectar.transform.position = resultPosition.position;
+            }
+
             PintsDisplay pintsDisplay = FindObjectOfType<PintsDisplay>();
             if (pintsDisplay != null)
             {
                 pintsDisplay.UpdatePointsUI();
             }
+
         }
         else if (isSpinning)
         {
-            Debug.Log("El gacha se esta realizando!");
+            Debug.Log("El gacha se está realizando!");
         }
-        
         else if (gameManager.Points < gachaPrice)
         {
-            Debug.Log("No hay suficientes monedas para comprar!");
+            Debug.Log("¡No hay suficientes monedas para comprar!");
         }
-        
         else if (delibestiasDisponibles.Count == 0)
         {
-            Debug.Log("No hay mas delibestias disponibles en el gacha!");
+            Debug.Log("¡No hay más delibestias disponibles en el gacha!");
         }
     }
 }
-

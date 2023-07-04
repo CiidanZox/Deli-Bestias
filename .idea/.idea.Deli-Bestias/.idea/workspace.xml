@@ -4,7 +4,9 @@
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnOb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Scripts/DJSpawnOb.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,6 +113,7 @@
       <workItem from="1688347392120" duration="661000" />
       <workItem from="1688348834786" duration="15653000" />
       <workItem from="1688425138238" duration="842000" />
+      <workItem from="1688434193591" duration="9777000" />
     </task>
     <servers />
   </component>
