@@ -9,6 +9,7 @@ public class FoodBar2 : MonoBehaviour
     public Image foodBar;
     public Transform initialPosition;
     private bool comidaCollider = false;
+    public TMPro.TextMeshProUGUI inventoryText;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -34,6 +35,13 @@ public class FoodBar2 : MonoBehaviour
             {
                 foodBar.fillAmount += food;
                 Destroy(GameObject.FindGameObjectWithTag("Food2"));
+                
+                int currentQuantity = int.Parse(inventoryText.text);
+                if (currentQuantity > 0)
+                {
+                    currentQuantity--;
+                    inventoryText.text = currentQuantity.ToString();
+                }
             }
             else if (foodBar.fillAmount >= 1f)
             {

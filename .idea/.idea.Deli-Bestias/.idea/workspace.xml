@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyPina.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyPina.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +114,7 @@
       <workItem from="1688530980562" duration="5660000" />
       <workItem from="1688537088989" duration="606000" />
       <workItem from="1688538649010" duration="2023000" />
+      <workItem from="1688594127513" duration="283000" />
     </task>
     <servers />
   </component>
