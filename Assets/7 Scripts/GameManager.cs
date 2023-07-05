@@ -1,13 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-using UnityEngine.SceneManagement;
-using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-
-
+using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public partial class GameData
@@ -15,6 +10,7 @@ public partial class GameData
     public int points;
     public int pointsMinigame;
     public bool firstPlay;
+    public float foodBarFillAmount;
 }
 
 public class GameManager : MonoBehaviour
@@ -24,7 +20,8 @@ public class GameManager : MonoBehaviour
     private int pointsMinigame;
     private bool firstPlay = true;
     private int _pointsMinigame = 0;
-
+    
+    private SaveFoodBar foodBarManager;
     private string saveFilePath;
 
     private void Awake()
@@ -35,6 +32,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(transform.root.gameObject);
 
             saveFilePath = Application.persistentDataPath + "/saveData.dat";
+            foodBarManager = FindObjectOfType<SaveFoodBar>();
             LoadGameData();
 
             if (!SceneManager.GetSceneByName("0Null").isLoaded)
@@ -66,7 +64,6 @@ public class GameManager : MonoBehaviour
     }
 
     public int PointsMinigame
-
     {
         get { return pointsMinigame; }
         set { pointsMinigame = value; }
@@ -92,6 +89,7 @@ public class GameManager : MonoBehaviour
         data.points = points;
         data.pointsMinigame = pointsMinigame;
         data.firstPlay = firstPlay;
+        data.foodBarFillAmount = foodBarManager.GetFillAmount();
 
         bf.Serialize(file, data);
         file.Close();
@@ -110,6 +108,8 @@ public class GameManager : MonoBehaviour
             points = data.points;
             pointsMinigame = data.pointsMinigame;
             firstPlay = data.firstPlay;
+            
+            foodBarManager.SetFillAmount(data.foodBarFillAmount);
         }
         else
         {
@@ -123,7 +123,6 @@ public class GameManager : MonoBehaviour
     {
         SaveGameData();
     }
-
 
     public int PointsMinijuegos { get; set; }
 }

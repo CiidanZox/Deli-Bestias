@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Scripting;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 public class FoodBar : MonoBehaviour
 {
@@ -11,7 +13,7 @@ public class FoodBar : MonoBehaviour
     public Image foodBar;
     public Transform initialPosition;
     private bool comidaCollider = false;
-
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Food"))
@@ -43,5 +45,5 @@ public class FoodBar : MonoBehaviour
             }
         }
     }
-
+ 
 }
