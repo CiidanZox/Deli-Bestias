@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class DisminuirComida : MonoBehaviour
 {
     public Image barraImagen;
-    private float cantidadInicial = 1f;  
     private float velocidadDecremento = 0.1f;  
     private float tiempoDecremento = 60f; 
 
@@ -15,15 +14,6 @@ public class DisminuirComida : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.HasKey("CantidadComida"))
-        {
-            cantidadActual = PlayerPrefs.GetFloat("CantidadComida");
-        }
-        else
-        {
-            cantidadActual = cantidadInicial;
-        }
-
         barraImagen.fillAmount = cantidadActual;
     }
 
@@ -48,13 +38,6 @@ public class DisminuirComida : MonoBehaviour
             Debug.Log("La barra de comida se ha agotado.");
         }
         
-        PlayerPrefs.SetFloat("CantidadComida", cantidadActual);
-        PlayerPrefs.Save();
     }
     
-    private void OnDestroy()
-    {
-        PlayerPrefs.SetFloat("CantidadComida", cantidadActual);
-        PlayerPrefs.Save();
-    }
 }

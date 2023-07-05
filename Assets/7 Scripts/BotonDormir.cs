@@ -21,27 +21,6 @@ public class BotonDormir : MonoBehaviour
       noHayEnergia.SetActive(false);
       isPressed = false;
       playerDurmiendo.SetActive(false);
-
-      if (PlayerPrefs.HasKey("FillAmount"))
-      {
-         float savedFillAmount = PlayerPrefs.GetFloat("FillAmount");
-         barraEnergia.fillAmount = savedFillAmount;
-      }
-      else
-      {
-         barraEnergia.fillAmount = 0f;
-      }
-   }
-   
-   private void OnDisable()
-   {
-      PlayerPrefs.SetFloat("FillAmount", barraEnergia.fillAmount);
-   }
-   
-   private void OnApplicationQuit()
-   {
-      PlayerPrefs.SetFloat("FillAmount", barraEnergia.fillAmount);
-      PlayerPrefs.Save();
    }
 
    private void Update()
@@ -52,8 +31,6 @@ public class BotonDormir : MonoBehaviour
          playerDurmiendo.SetActive(false);
          playerDespierto.SetActive(true);
          isPressed = false;
-         
-         if (incrementarBarraCoroutine != null) StopCoroutine(incrementarBarraCoroutine);
       }
    }
 

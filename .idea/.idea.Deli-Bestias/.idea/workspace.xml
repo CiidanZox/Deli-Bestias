@@ -4,20 +4,20 @@
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/MariposaMantequilla.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/MariposaMantequilla.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Piña_0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CangrejoCuaso.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/CangrejoCuaso.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/Manqueque.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/Manqueque.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/OvejaAlgodon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/OvejaAlgodon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PaltaPinguino.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PaltaPinguino.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PlatanoTiburon.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/PlatanoTiburon.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/RatonQueso1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/RatonQueso1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/VacaFrutilla.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/2 Sprites/Final Delibestias/VacaFrutilla.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BotonDormir.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BotonDormir.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/DisminuirComida.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/DisminuirComida.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/Inventory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/Inventory.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Prefabs/Botella radioactiva.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Prefabs/Botella radioactiva.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/SkinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/SkinManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/Alien zul.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/Alien zul.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/MonedaJuego.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/MonedaJuego.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +126,8 @@
       <workItem from="1688425138238" duration="842000" />
       <workItem from="1688434193591" duration="9777000" />
       <workItem from="1688506766727" duration="12949000" />
+      <workItem from="1688530980562" duration="5660000" />
+      <workItem from="1688537088989" duration="606000" />
     </task>
     <servers />
   </component>

@@ -12,17 +12,6 @@ public class FoodBar : MonoBehaviour
     public Transform initialPosition;
     private bool comidaCollider = false;
 
-    private const string foodBarKey = "FoodBarFillAmount";
-
-    private void Start()
-    {
-        if (PlayerPrefs.HasKey(foodBarKey))
-        {
-            float fillAmount = PlayerPrefs.GetFloat(foodBarKey);
-            foodBar.fillAmount = fillAmount;
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Food"))
@@ -52,9 +41,6 @@ public class FoodBar : MonoBehaviour
             {
                 GameObject.FindGameObjectWithTag("Food").transform.position = initialPosition.position;
             }
-            
-            PlayerPrefs.SetFloat(foodBarKey, foodBar.fillAmount);
-            PlayerPrefs.Save();
         }
     }
 
