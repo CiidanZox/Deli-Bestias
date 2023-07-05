@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EsceneManager : MonoBehaviour
 {
@@ -35,7 +36,8 @@ public class EsceneManager : MonoBehaviour
     public void ResetAll()
     {
         PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
         SceneManager.LoadScene("1Principal");
     }
-
+    
 }

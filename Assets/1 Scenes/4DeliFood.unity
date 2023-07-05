@@ -680,6 +680,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164748199}
   m_CullTransparentMesh: 1
+--- !u!1 &177877906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 177877907}
+  - component: {fileID: 177877908}
+  m_Layer: 0
+  m_Name: SpawnOb (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &177877907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177877906}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -75.579414, y: -3234.11, z: -14.917813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1682470303}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177877908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177877906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afe22888c6bbc004d9ea4fa1ae55d57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstPrefab: {fileID: 3253864395943373917, guid: 6d1740efb29b16f499414097e8ab7bc2, type: 3}
+  spawnInterval: 12
+  spawnIntervalReduction: 2
+  timeToReduceInterval: 10
+  rotationSpeed: 100
 --- !u!1 &285833174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,8 +1364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstPrefab: {fileID: 3253864395943373917, guid: 6d1740efb29b16f499414097e8ab7bc2, type: 3}
   spawnInterval: 12
-  spawnIntervalReduction: 1
-  timeToReduceInterval: 48
+  spawnIntervalReduction: 2
+  timeToReduceInterval: 10
   rotationSpeed: 100
 --- !u!4 &1032140297
 Transform:
@@ -1331,7 +1380,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1682470303}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1051263750
 GameObject:
@@ -2664,7 +2713,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1090503160}
+  - {fileID: 1894735108}
   - {fileID: 1032140297}
+  - {fileID: 177877907}
   m_Father: {fileID: 285833175}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2863,6 +2914,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1894735107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1894735108}
+  - component: {fileID: 1894735109}
+  m_Layer: 0
+  m_Name: SpawnCoins (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1894735108
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894735107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -75.579414, y: -3231.66, z: -14.917813}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1682470303}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894735109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894735107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011b0ea3a4373474ab26d085716da5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pinaPrefab: {fileID: 4662651270686470102, guid: 7392a090792ad3e4bb1f7cd9a7b5cb9b, type: 3}
+  zanahoriaPrefab: {fileID: 3636491929517239215, guid: c77d446ddd1909540b256fea4402b725, type: 3}
+  spawnInterval: 4
+  rotationSpeed: 100
 --- !u!1 &2140751366
 GameObject:
   m_ObjectHideFlags: 0

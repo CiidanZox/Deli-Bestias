@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Scripting;
 
-public class FoodBar : MonoBehaviour
+public class FoodBar2 : MonoBehaviour
 {
     public float food = 0.2f;
     public Image foodBar;
@@ -16,6 +14,8 @@ public class FoodBar : MonoBehaviour
 
     private void Start()
     {
+        foodBar.fillAmount = 0.4f;
+        
         if (PlayerPrefs.HasKey(foodBarKey))
         {
             float fillAmount = PlayerPrefs.GetFloat(foodBarKey);
@@ -25,7 +25,7 @@ public class FoodBar : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Food"))
+        if (other.gameObject.CompareTag("Food2"))
         {
             comidaCollider = true;
         }
@@ -33,7 +33,7 @@ public class FoodBar : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Food"))
+        if (other.gameObject.CompareTag("Food2"))
         {
             comidaCollider = false;
         }
@@ -46,16 +46,15 @@ public class FoodBar : MonoBehaviour
             if (foodBar.fillAmount < 1f)
             {
                 foodBar.fillAmount += food;
-                Destroy(GameObject.FindGameObjectWithTag("Food"));
+                Destroy(GameObject.FindGameObjectWithTag("Food2"));
             }
             else if (foodBar.fillAmount >= 1f)
             {
-                GameObject.FindGameObjectWithTag("Food").transform.position = initialPosition.position;
+                GameObject.FindGameObjectWithTag("Food2").transform.position = initialPosition.position;
             }
             
             PlayerPrefs.SetFloat(foodBarKey, foodBar.fillAmount);
             PlayerPrefs.Save();
         }
     }
-
 }

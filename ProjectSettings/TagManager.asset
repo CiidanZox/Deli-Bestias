@@ -9,6 +9,7 @@ TagManager:
   - Destroyer
   - Coin
   - Enemy
+  - Food2
   layers:
   - Default
   - TransparentFX
