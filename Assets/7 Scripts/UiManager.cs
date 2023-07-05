@@ -7,7 +7,7 @@ using DG.Tweening;
 
 public class UiManager : MonoBehaviour
 {
-    public RectTransform panelController, options, minijuegos, foodEnergy, shopPoints, gacha ,galeria;
+    public RectTransform panelController, options, minijuegos, foodEnergy, shopPoints, gacha ,galeria, botonDormir;
 
     public void ChoosePanel(float posX)
     {
@@ -77,5 +77,15 @@ public class UiManager : MonoBehaviour
     public void CloseGaleria()
     {
         galeria.DOAnchorPos(new Vector2(0, 13330), 0.5f);
+    }
+
+    public void BotonDormir()
+    {
+        botonDormir.DOAnchorPos(new Vector2(0, 0), 0.1f);
+    }
+
+    public void CloseBotonDormir()
+    {
+        botonDormir.DOAnchorPos(new Vector2(0, 6420),0.1f);
     }
 }
