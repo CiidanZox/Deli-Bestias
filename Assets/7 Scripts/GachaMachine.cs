@@ -63,7 +63,7 @@ public class GachaMachine : MonoBehaviour
 
     private IEnumerator SpinRoutine()
     {
-        yield return new WaitForSeconds(4f); // Espera de 4 segundos
+        yield return new WaitForSeconds(3f); // Espera de 4 segundos
 
         int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
         GameObject resultObject = delibestiasDisponibles[randomIndex];
