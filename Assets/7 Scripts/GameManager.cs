@@ -10,7 +10,6 @@ public partial class GameData
     public int points;
     public int pointsMinigame;
     public bool firstPlay;
-    public float foodBarFillAmount;
 }
 
 public class GameManager : MonoBehaviour
@@ -21,7 +20,6 @@ public class GameManager : MonoBehaviour
     private bool firstPlay = true;
     private int _pointsMinigame = 0;
     
-    private SaveFoodBar foodBarManager;
     private string saveFilePath;
 
     private void Awake()
@@ -32,7 +30,6 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(transform.root.gameObject);
 
             saveFilePath = Application.persistentDataPath + "/saveData.dat";
-            foodBarManager = FindObjectOfType<SaveFoodBar>();
             LoadGameData();
 
             if (!SceneManager.GetSceneByName("0Null").isLoaded)
@@ -89,7 +86,6 @@ public class GameManager : MonoBehaviour
         data.points = points;
         data.pointsMinigame = pointsMinigame;
         data.firstPlay = firstPlay;
-        data.foodBarFillAmount = foodBarManager.GetFillAmount();
 
         bf.Serialize(file, data);
         file.Close();
@@ -109,7 +105,6 @@ public class GameManager : MonoBehaviour
             pointsMinigame = data.pointsMinigame;
             firstPlay = data.firstPlay;
             
-            foodBarManager.SetFillAmount(data.foodBarFillAmount);
         }
         else
         {

@@ -45,44 +45,7 @@ public class GachaMachine : MonoBehaviour
 
             Debug.Log("Gacha spin successful!");
 
-            int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
-            GameObject resultObject = delibestiasDisponibles[randomIndex];
-
-            Vector3 spawnPosition = transform.position;
-            spawnPosition.y = -10f;
-
-            Vector3 deliPosition = new Vector3(0.1f, 0.1f, 0.1f);
-
-            Transform spawnedObject = Instantiate(resultObject, deliPosition, Quaternion.identity).transform;
-
-            spawnedObject.DOScale(deliPosition * 1.5f, 1f).SetEase(Ease.OutBounce);
-
-            spawnedObject.DOMove(resultPosition.position, 1f).SetEase(Ease.OutQuint).OnComplete(() =>
-            {
-                Destroy(spawnedObject.gameObject, 1f);
-                isSpinning = false;
-            });
-
-            delibestiasDisponibles.RemoveAt(randomIndex);
-
-            ObjectConnection connection = objectConnections.Find(con => con.delibestia == resultObject);
-            if (connection != null)
-            {
-                GameObject objetoConectar = connection.objetoConectar;
-                GameObject buttonBlock = connection.buttonBlocked;
-
-                objetoConectar.SetActive(false);
-                buttonBlock.SetActive(false);
-
-                objetoConectar.transform.position = resultPosition.position;
-            }
-
-            PintsDisplay pintsDisplay = FindObjectOfType<PintsDisplay>();
-            if (pintsDisplay != null)
-            {
-                pintsDisplay.UpdatePointsUI();
-            }
-
+            StartCoroutine(SpinRoutine());
         }
         else if (isSpinning)
         {
@@ -95,6 +58,49 @@ public class GachaMachine : MonoBehaviour
         else if (delibestiasDisponibles.Count == 0)
         {
             Debug.Log("¡No hay más delibestias disponibles en el gacha!");
+        }
+    }
+
+    private IEnumerator SpinRoutine()
+    {
+        yield return new WaitForSeconds(4f); // Espera de 4 segundos
+
+        int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
+        GameObject resultObject = delibestiasDisponibles[randomIndex];
+
+        Vector3 spawnPosition = transform.position;
+        spawnPosition.y = -10f;
+
+        Vector3 deliPosition = new Vector3(0.1f, 0.1f, 0.1f);
+
+        Transform spawnedObject = Instantiate(resultObject, deliPosition, Quaternion.identity).transform;
+
+        spawnedObject.DOScale(deliPosition * 1.5f, 1f).SetEase(Ease.OutBounce);
+
+        spawnedObject.DOMove(resultPosition.position, 1f).SetEase(Ease.OutQuint).OnComplete(() =>
+        {
+            Destroy(spawnedObject.gameObject, 1f);
+            isSpinning = false;
+        });
+
+        delibestiasDisponibles.RemoveAt(randomIndex);
+
+        ObjectConnection connection = objectConnections.Find(con => con.delibestia == resultObject);
+        if (connection != null)
+        {
+            GameObject objetoConectar = connection.objetoConectar;
+            GameObject buttonBlock = connection.buttonBlocked;
+
+            objetoConectar.SetActive(false);
+            buttonBlock.SetActive(false);
+
+            objetoConectar.transform.position = resultPosition.position;
+        }
+
+        PintsDisplay pintsDisplay = FindObjectOfType<PintsDisplay>();
+        if (pintsDisplay != null)
+        {
+            pintsDisplay.UpdatePointsUI();
         }
     }
 }

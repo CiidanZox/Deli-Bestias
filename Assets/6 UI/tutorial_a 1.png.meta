@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8eaf718b255895c44b58e673ff6b07e5
+guid: edb08b3670f509048b493f2e87d4ef27
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -115,28 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: espacio_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 41
-        width: 1525
-        height: 5405
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 128451ca26475484fa0b8b898c1194b9
-      internalID: -1116185356
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -147,8 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      espacio_0: -1116185356
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

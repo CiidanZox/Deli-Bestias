@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8eaf718b255895c44b58e673ff6b07e5
+guid: 7ee8b59421985a04084a2dd06b0759a8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: espacio_0
+      name: BUTTOMS_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 41
-        width: 1525
-        height: 5405
+        x: 2171
+        y: 3315
+        width: 961
+        height: 566
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 128451ca26475484fa0b8b898c1194b9
-      internalID: -1116185356
+      spriteID: 6caa512dccf6b0f4f8a764b53a5a66d9
+      internalID: 103658098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUTTOMS_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2218
+        width: 3132
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0470fd82af789f345a92379147086bd2
+      internalID: 1404766495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUTTOMS_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1136
+        width: 3132
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005148b30b6172a47aeadec9121bc34e
+      internalID: -660949302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUTTOMS_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3132
+        height: 827
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ca655a85c44e14f93874e4c20f91b1
+      internalID: 105467480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BUTTOMS_4
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 3432
+        width: 1159
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789fe269a0fcb9b41aef9503eb942c91
+      internalID: -1298431822
       vertices: []
       indices: 
       edges: []
@@ -140,7 +224,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 946dc247b81781945b3b20c5a1d11b8a
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      espacio_0: -1116185356
+      BUTTOMS_2: -660949302
+      BUTTOMS_4: -1298431822
+      BUTTOMS_1: 1404766495
+      BUTTOMS_0: 103658098
+      BUTTOMS_3: 105467480
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

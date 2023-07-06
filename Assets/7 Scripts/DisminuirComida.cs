@@ -10,12 +10,7 @@ public class DisminuirComida : MonoBehaviour
     private float tiempoDecremento = 60f; 
 
     private float tiempoTranscurrido = 0f;
-    private float cantidadActual;
-
-    private void Start()
-    {
-        barraImagen.fillAmount = cantidadActual;
-    }
+    private float cantidadActual = 0.5f; // Valor inicial de cantidadActual
 
     private void Update()
     {
@@ -37,7 +32,5 @@ public class DisminuirComida : MonoBehaviour
         {
             Debug.Log("La barra de comida se ha agotado.");
         }
-        
     }
-    
 }

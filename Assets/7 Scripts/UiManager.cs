@@ -61,12 +61,12 @@ public class UiManager : MonoBehaviour
 
     public void Gacha()
     {
-        gacha.DOAnchorPos(new Vector2(0, 0), 0.3f);
+        gacha.DOAnchorPos(new Vector2(0, 0), 0.5f);
     }
 
     public void CloseGacha()
     {
-        gacha.DOAnchorPos(new Vector2(550, 13330), 0f);
+        gacha.DOAnchorPos(new Vector2(550, 13330), 0.3f);
     }
 
     public void Galeria()

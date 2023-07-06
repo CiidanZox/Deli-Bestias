@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3253864395943373917
+--- !u!1 &1127881657638328393
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1762034261604428405}
-  - component: {fileID: 3015667802315542657}
-  - component: {fileID: -2839702239407081304}
-  - component: {fileID: 2941825411244209619}
-  - component: {fileID: 1721765580078396789}
+  - component: {fileID: 8704926487035848194}
+  - component: {fileID: 6371157206548503213}
+  - component: {fileID: -8798964586738951367}
+  - component: {fileID: -8478194486270218980}
+  - component: {fileID: 843101155069380935}
   m_Layer: 0
-  m_Name: Botella radioactiva
+  m_Name: Huesos de pescado
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1762034261604428405
+--- !u!4 &8704926487035848194
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253864395943373917}
+  m_GameObject: {fileID: 1127881657638328393}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.22, y: 1.68, z: 0}
-  m_LocalScale: {x: 0.0864194, y: 0.0864194, z: 0.0864194}
+  m_LocalPosition: {x: 0, y: 1.86, z: 0}
+  m_LocalScale: {x: 0.07224348, y: 0.07224348, z: 0.07224348}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3015667802315542657
+--- !u!212 &6371157206548503213
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253864395943373917}
+  m_GameObject: {fileID: 1127881657638328393}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -75,26 +75,26 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 0b8c73cf5b6852341bfc34b59bffaf18, type: 3}
+  m_SortingOrder: 3
+  m_Sprite: {fileID: 21300000, guid: 49f48a0db7252f5429a2cfe635147368, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.92, y: 18.87}
+  m_Size: {x: 20.48, y: 20.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &-2839702239407081304
+--- !u!50 &-8798964586738951367
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253864395943373917}
+  m_GameObject: {fileID: 1127881657638328393}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -102,35 +102,35 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.8
+  m_GravityScale: 0.4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!70 &2941825411244209619
+--- !u!70 &-8478194486270218980
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253864395943373917}
+  m_GameObject: {fileID: 1127881657638328393}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020645889, y: 0.061937667}
-  m_Size: {x: 6.383198, y: 18.746122}
-  m_Direction: 0
---- !u!114 &1721765580078396789
+  m_Offset: {x: 0.6956454, y: 0.6640103}
+  m_Size: {x: 19.088753, y: 6.8835597}
+  m_Direction: 1
+--- !u!114 &843101155069380935
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3253864395943373917}
+  m_GameObject: {fileID: 1127881657638328393}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac05d6ddc6c05ef498be687d62b996cc, type: 3}

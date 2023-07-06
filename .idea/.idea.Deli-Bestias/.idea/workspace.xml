@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/6 UI/espacio.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/6 UI/espacio.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/DisminuirComida.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/DisminuirComida.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/SaveDataScripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/SaveDataScripts/SaveFoodBar.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/SaveDataScripts/SaveFoodBar.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/Scripts/ManagerEscenas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/Alien zul.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/Alien zul.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/AlienEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/2DeliFall/Prefabs/AlienEnemy.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Prefabs/Botella radioactiva.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/3DeliFood/Prefabs/Botella radioactiva.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Candy Beans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/Candy Beans SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +131,7 @@
       <workItem from="1688530980562" duration="5660000" />
       <workItem from="1688537088989" duration="606000" />
       <workItem from="1688538649010" duration="2023000" />
-      <workItem from="1688594127513" duration="283000" />
+      <workItem from="1688594127513" duration="7562000" />
     </task>
     <servers />
   </component>
