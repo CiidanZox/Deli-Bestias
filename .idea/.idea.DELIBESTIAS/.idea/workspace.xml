@@ -8,7 +8,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/7 Scripts/SonidoMonedaDestroy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/7 Scripts/Volumen.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/7 Scripts/sonidoComidaDestroy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../prueba delibestiassssss/Assets/Scripts/CambioPanel.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -95,6 +98,8 @@
       <workItem from="1688407534304" duration="1019000" />
       <workItem from="1688525782482" duration="1506000" />
       <workItem from="1688578534043" duration="695000" />
+      <workItem from="1688656825243" duration="855000" />
+      <workItem from="1688658082223" duration="7524000" />
     </task>
     <servers />
   </component>
