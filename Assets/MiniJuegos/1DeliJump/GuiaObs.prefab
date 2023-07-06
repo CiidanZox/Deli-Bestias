@@ -336,7 +336,6 @@ GameObject:
   - component: {fileID: 7618522998848776928}
   - component: {fileID: 2089081404068562615}
   - component: {fileID: 1697267167755089700}
-  - component: {fileID: 1985365324728058125}
   m_Layer: 0
   m_Name: Points
   m_TagString: Point
@@ -507,14 +506,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!81 &1985365324728058125
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3934727924429669963}
-  m_Enabled: 1
 --- !u!1 &6769734690533137750
 GameObject:
   m_ObjectHideFlags: 0

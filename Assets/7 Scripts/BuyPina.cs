@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using CI.QuickSave;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
@@ -14,12 +11,14 @@ public class BuyPina : MonoBehaviour
 
     private Button buttonFrutilla;
     private GameManager gameManager;
+    
     void Start()
     {
         buttonFrutilla = GetComponent<Button>();
         gameManager = GameManager.Instance;
 
         buttonFrutilla.onClick.AddListener(AttempToBuy);
+        
     }
 
     private void AttempToBuy()
@@ -43,6 +42,7 @@ public class BuyPina : MonoBehaviour
             {
                 pintsDisplay.UpdatePointsUI();
             }
+            
         }
         else
         {
@@ -50,4 +50,5 @@ public class BuyPina : MonoBehaviour
         }
         
     }
+    
 }

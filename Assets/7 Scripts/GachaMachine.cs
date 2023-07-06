@@ -23,15 +23,21 @@ public class GachaMachine : MonoBehaviour
     public List<ObjectConnection> objectConnections;
     public List<GameObject> buttonBlocked;
     public UnityEvent onSpin;
+    public AudioClip audioRefri;
+    public AudioSource audioSource;
+    public Animator refriAnimation;
 
     private GameManager gameManager;
     private bool isSpinning = false;
     private List<GameObject> delibestiasDisponibles;
+    
 
     private void Start()
     {
         gameManager = GameManager.Instance;
         delibestiasDisponibles = new List<GameObject>(spawnDeliBestias);
+        audioSource.clip = audioRefri;
+        
     }
 
     public void Spin()
@@ -44,6 +50,8 @@ public class GachaMachine : MonoBehaviour
             onSpin.Invoke();
 
             Debug.Log("Gacha spin successful!");
+
+            ReproducirAnimacion();
 
             StartCoroutine(SpinRoutine());
         }
@@ -63,7 +71,7 @@ public class GachaMachine : MonoBehaviour
 
     private IEnumerator SpinRoutine()
     {
-        yield return new WaitForSeconds(3f); // Espera de 4 segundos
+        yield return new WaitForSeconds(4f); // Espera de 4 segundos
 
         int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
         GameObject resultObject = delibestiasDisponibles[randomIndex];
@@ -96,11 +104,18 @@ public class GachaMachine : MonoBehaviour
 
             objetoConectar.transform.position = resultPosition.position;
         }
-
+ 
         PintsDisplay pintsDisplay = FindObjectOfType<PintsDisplay>();
         if (pintsDisplay != null)
         {
             pintsDisplay.UpdatePointsUI();
         }
     }
+    
+    public void ReproducirAnimacion()
+    {
+        refriAnimation.Play("refriAnimacion", -1, 0f);
+        audioSource.Play();
+    }
+    
 }

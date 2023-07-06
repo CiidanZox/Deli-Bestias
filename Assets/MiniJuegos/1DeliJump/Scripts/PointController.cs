@@ -7,6 +7,8 @@ using TMPro;
 public class PointController : MonoBehaviour
 {
     public TextMeshProUGUI pointsText;
+    public AudioClip sonidoCoin;
+    public AudioSource audioSource;
     private GameManager gameManager;
     private int pointMinigame;
 
@@ -14,6 +16,7 @@ public class PointController : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         UpdatePointsText();
+        audioSource.clip = sonidoCoin;
 
         if (gameManager.FirstPlay)
         {
@@ -26,6 +29,7 @@ public class PointController : MonoBehaviour
     {
         if (col.CompareTag("Point"))
         {
+            audioSource.Play();
             gameManager.Points++;
             Destroy(col.gameObject);
             pointMinigame++;
