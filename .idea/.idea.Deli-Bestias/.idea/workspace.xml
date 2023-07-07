@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65e216fe-50a2-48c5-967a-6c9a53cbb198" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Deli-Bestias/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/0Null.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/0Null.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/1Principal.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/2SpaceBeast.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/3DeliFall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/1 Scenes/4DeliFood.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/4 Prefabs/ComidasPF/Zanahoria.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/6 UI/utlimas weas.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/6 UI/utlimas weas.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BotonDormir.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BotonDormir.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyPina.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyPina.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/BuyZanahora.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/FoodBar2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/GachaMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/SaveData.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/GuiaObs.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MiniJuegos/1DeliJump/GuiaObs.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/7 Scripts/EsceneManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +119,7 @@
       <workItem from="1688669649010" duration="3280000" />
       <workItem from="1688678157648" duration="6653000" />
       <workItem from="1688686625686" duration="2814000" />
+      <workItem from="1688694856258" duration="429000" />
     </task>
     <servers />
   </component>

@@ -33,10 +33,18 @@ public class EsceneManager : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("1Principal");
     }
-    public void ResetAll()
+    public void ResetGameData()
     {
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
+        GameManager.Instance.Points = 0;
+        GameManager.Instance.PointsMinigame = 0;
+        GameManager.Instance.FirstPlay = true;
+        
+        string saveFilePath = Application.persistentDataPath + "/saveData.dat";
+        if (System.IO.File.Exists(saveFilePath))
+        {
+            System.IO.File.Delete(saveFilePath);
+        }
+     
         SceneManager.LoadScene("1Principal");
     }
     
