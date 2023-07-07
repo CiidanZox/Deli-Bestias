@@ -21,6 +21,9 @@ public class BotonDormir : MonoBehaviour
       noHayEnergia.SetActive(false);
       isPressed = false;
       playerDurmiendo.SetActive(false);
+      
+      savedFillAmount = PlayerPrefs.GetFloat("FillAmount", 0f);
+      barraEnergia.fillAmount = savedFillAmount;
    }
 
    private void Update()
@@ -78,6 +81,30 @@ public class BotonDormir : MonoBehaviour
          barraEnergia.fillAmount += 0.1f;
          yield return new WaitForSeconds(1f);
       }
+   }
+   
+   private void OnApplicationQuit()
+   {
+      PlayerPrefs.SetFloat("FillAmount", barraEnergia.fillAmount);
+      PlayerPrefs.Save();
+   }
+   
+   private void OnDisable()
+   {
+      PlayerPrefs.SetFloat("FillAmount", barraEnergia.fillAmount);
+      PlayerPrefs.Save();
+   }
+   
+   public void DeleteEnergy()
+   {
+      PlayerPrefs.DeleteKey("FillAmount");
+      PlayerPrefs.Save();
+      
+      barraEnergia.fillAmount = 0f;
+      panelDormir.SetActive(false);
+      playerDurmiendo.SetActive(false);
+      playerDespierto.SetActive(true);
+      isPressed = false;
    }
 
    public void CerrarVentana()
