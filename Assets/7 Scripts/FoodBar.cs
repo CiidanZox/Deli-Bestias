@@ -12,9 +12,16 @@ public class FoodBar : MonoBehaviour
     public float food = 0.2f;
     public Image foodBar;
     public Transform initialPosition;
+    public AudioClip sonidoComer;
+    public AudioSource audioSource;
     private bool comidaCollider = false;
     public TMPro.TextMeshProUGUI inventoryText;
-    
+
+    private void Start()
+    {
+        audioSource.clip = sonidoComer;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Food"))
@@ -38,6 +45,7 @@ public class FoodBar : MonoBehaviour
             if (foodBar.fillAmount < 1f)
             {
                 foodBar.fillAmount += food;
+                audioSource.Play();
                 Destroy(GameObject.FindGameObjectWithTag("Food"));
                 
                 int currentQuantity = int.Parse(inventoryText.text);

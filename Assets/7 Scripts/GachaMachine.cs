@@ -17,6 +17,8 @@ public class ObjectConnection
 
 public class GachaMachine : MonoBehaviour
 {
+    public GameObject nuevaDelibestiaPanel;
+    public GameObject ventanaDinero;
     public int gachaPrice = 100;
     public Transform resultPosition;
     public List<GameObject> spawnDeliBestias;
@@ -61,6 +63,7 @@ public class GachaMachine : MonoBehaviour
         }
         else if (gameManager.Points < gachaPrice)
         {
+            ventanaDinero.SetActive(true);
             Debug.Log("¡No hay suficientes monedas para comprar!");
         }
         else if (delibestiasDisponibles.Count == 0)
@@ -71,7 +74,7 @@ public class GachaMachine : MonoBehaviour
 
     private IEnumerator SpinRoutine()
     {
-        yield return new WaitForSeconds(2.5f); // Espera de 4 segundos
+        yield return new WaitForSeconds(2.5f); // Espera de 2.5 segundos
 
         int randomIndex = UnityEngine.Random.Range(0, delibestiasDisponibles.Count);
         GameObject resultObject = delibestiasDisponibles[randomIndex];
@@ -92,6 +95,8 @@ public class GachaMachine : MonoBehaviour
         });
 
         delibestiasDisponibles.RemoveAt(randomIndex);
+        
+        nuevaDelibestiaPanel.SetActive(true);
 
         ObjectConnection connection = objectConnections.Find(con => con.delibestia == resultObject);
         if (connection != null)

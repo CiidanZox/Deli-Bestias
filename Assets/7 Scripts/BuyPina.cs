@@ -7,6 +7,7 @@ public class BuyPina : MonoBehaviour
     public int precio = 50;
     public GameObject zanahoriaPrefab;
     public UnityEvent onPurchase;
+    public GameObject ventanaDinero;
     public TMPro.TextMeshProUGUI inventoryText;
 
     private Button buttonFrutilla;
@@ -46,6 +47,7 @@ public class BuyPina : MonoBehaviour
         }
         else
         {
+            ventanaDinero.SetActive(true);
             Debug.Log("!No tienes suficientes monedas para comprar!");
         }
         

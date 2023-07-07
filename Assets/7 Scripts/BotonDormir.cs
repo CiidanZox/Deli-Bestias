@@ -11,7 +11,7 @@ public class BotonDormir : MonoBehaviour
    public GameObject playerDespierto;
    public Image barraEnergia;
    public GameObject noHayEnergia;
-   
+
    private bool isPressed;
    private Coroutine incrementarBarraCoroutine;
    private float savedFillAmount;

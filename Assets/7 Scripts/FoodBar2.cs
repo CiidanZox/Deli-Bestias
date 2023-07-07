@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,16 @@ public class FoodBar2 : MonoBehaviour
     public float food = 0.2f;
     public Image foodBar;
     public Transform initialPosition;
+    public AudioClip sonidoComer;
+    public AudioSource audioSource;
     private bool comidaCollider = false;
     public TMPro.TextMeshProUGUI inventoryText;
+
+
+    private void Start()
+    {
+        audioSource.clip = sonidoComer;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -34,6 +43,7 @@ public class FoodBar2 : MonoBehaviour
             if (foodBar.fillAmount < 1f)
             {
                 foodBar.fillAmount += food;
+                audioSource.Play();
                 Destroy(GameObject.FindGameObjectWithTag("Food2"));
                 
                 int currentQuantity = int.Parse(inventoryText.text);
